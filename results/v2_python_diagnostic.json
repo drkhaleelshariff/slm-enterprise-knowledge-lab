@@ -1,0 +1,31 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "purpose": "Diagnose Python-version failure without updating weights",
+  "records": [
+    {
+      "category": "training_question",
+      "question": "Which command displays the installed Python version?",
+      "answer": "python -V",
+      "exact_training_target_match": false,
+      "accepted_command_match": true,
+      "ended_with_eos": true
+    },
+    {
+      "category": "training_question",
+      "question": "Print the version of the Python interpreter invoked as python.",
+      "answer": "python -V",
+      "exact_training_target_match": false,
+      "accepted_command_match": true,
+      "ended_with_eos": true
+    },
+    {
+      "category": "development_question",
+      "question": "How can I ask the python executable to report its version and exit?",
+      "answer": "python -m pyc",
+      "exact_training_target_match": false,
+      "accepted_command_match": false,
+      "ended_with_eos": true
+    }
+  ]
+}

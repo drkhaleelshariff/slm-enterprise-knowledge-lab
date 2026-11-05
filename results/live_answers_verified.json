@@ -1,0 +1,40 @@
+{
+  "session_file": "live_rag_20261105T194249421667Z.json",
+  "verification_scope": "Exact command matching against the referenced source lines; does not establish relevance or source correctness.",
+  "generated_answers_checked": 2,
+  "exact_source_command_matches": 2,
+  "reviews": [
+    {
+      "question": "Which Linux command prints the kernel release?",
+      "status": "checked",
+      "answer": "uname -r",
+      "source_command": "uname -r",
+      "exact_source_command_match": true,
+      "source_reference": {
+        "chunk_id": "linux-commands-001:v1:kernel-release",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 28,
+        "end_line": 31
+      }
+    },
+    {
+      "question": "How do I find my current folder's path in Linux?",
+      "status": "checked",
+      "answer": "pwd",
+      "source_command": "pwd",
+      "exact_source_command_match": true,
+      "source_reference": {
+        "chunk_id": "linux-commands-001:v1:current-working-directory",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 8,
+        "end_line": 11
+      }
+    },
+    {
+      "question": "What is Meridian's escalation telephone number?",
+      "status": "application_withheld"
+    }
+  ]
+}

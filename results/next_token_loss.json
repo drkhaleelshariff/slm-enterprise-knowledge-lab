@@ -1,0 +1,37 @@
+{
+  "status": "manual logits; no model training",
+  "vocabulary": {
+    "<pad>": 0,
+    "check": 1,
+    "disk": 2,
+    "space": 3,
+    "<eos>": 4
+  },
+  "input_ids": [
+    [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  ],
+  "targets": [
+    [
+      2,
+      3,
+      4,
+      -100,
+      -100
+    ]
+  ],
+  "logits_shape": [
+    1,
+    5,
+    5
+  ],
+  "valid_target_count": 3,
+  "loss": 0.18161149322986603,
+  "uniform_loss": 1.6094379425048828,
+  "ignored_positions_have_zero_logit_gradients": true
+}

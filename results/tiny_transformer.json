@@ -1,0 +1,46 @@
+{
+  "status": "toy transformer trained on three sequences",
+  "evaluation_scope": "training examples and seen prefixes",
+  "seed": 42,
+  "parameter_count": 9515,
+  "initial_loss": 2.326165199279785,
+  "final_loss": 0.274875283241272,
+  "future_token_isolation_passed": true,
+  "history": [
+    {
+      "step": 1,
+      "training_loss_after_update": 1.6349657773971558
+    },
+    {
+      "step": 50,
+      "training_loss_after_update": 0.2761893570423126
+    },
+    {
+      "step": 100,
+      "training_loss_after_update": 0.2754201292991638
+    },
+    {
+      "step": 150,
+      "training_loss_after_update": 0.2751699388027191
+    },
+    {
+      "step": 200,
+      "training_loss_after_update": 0.2750266492366791
+    },
+    {
+      "step": 250,
+      "training_loss_after_update": 0.27493610978126526
+    },
+    {
+      "step": 300,
+      "training_loss_after_update": 0.274875283241272
+    }
+  ],
+  "generations": {
+    "check disk": "<bos> check disk space <eos>",
+    "check python": "<bos> check python version <eos>",
+    "list": "<bos> list running processes <eos>"
+  },
+  "checkpoint_reload_passed": true,
+  "checkpoint_max_logit_difference": 0.0
+}

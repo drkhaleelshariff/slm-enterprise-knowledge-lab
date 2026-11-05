@@ -1,0 +1,45 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "torch_version": "2.15.0+cpu",
+  "transformers_version": "5.22.1",
+  "peft_version": "0.21.2",
+  "seed": 42,
+  "rank": 4,
+  "alpha": 8,
+  "learning_rate": 0.001,
+  "updates": 20,
+  "examples_per_update": 16,
+  "microbatch_size": 1,
+  "supervised_tokens_per_update": 68,
+  "trainable_parameters": 230400,
+  "initial_training_loss": 2.799216358100667,
+  "final_training_loss": 0.13461987855022445,
+  "training_seconds": 247.32552730001044,
+  "training_file_sha256": "bf019b9fc434a2268949611d8b64d14dcdd0ca23b6ecc28cb6ef052a4e2d7875",
+  "instruction_file_sha256": "2f0110643e17fb60dc5de951f5360b1122c7f249354cca45f88f06d54cce4f38",
+  "shared_instruction": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.",
+  "history": [
+    {
+      "update": 1,
+      "training_answer_loss": 2.6769777904538548
+    },
+    {
+      "update": 5,
+      "training_answer_loss": 1.9538583737962387
+    },
+    {
+      "update": 10,
+      "training_answer_loss": 0.9653543996460298
+    },
+    {
+      "update": 15,
+      "training_answer_loss": 0.47873490829678145
+    },
+    {
+      "update": 20,
+      "training_answer_loss": 0.13461987855022445
+    }
+  ],
+  "evaluation_scope": "Training loss only. Development examples were not used."
+}

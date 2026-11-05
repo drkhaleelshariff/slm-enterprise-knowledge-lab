@@ -1,0 +1,29 @@
+﻿# Python environment and generated caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Downloaded models and training artifacts
+models/
+adapters/
+checkpoints/
+.cache/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Credentials and private data
+.env
+.env.*
+!.env.example
+private_data/
+*.pem
+*.ppk
+
+# Local configuration and temporary files
+use-local-env.ps1
+*.tmp
+docs/experiment_v3_before_cleanup.txt

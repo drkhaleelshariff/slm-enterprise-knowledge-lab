@@ -1,0 +1,58 @@
+{
+  "generation_model": "HuggingFaceTB/SmolLM2-135M",
+  "generation_model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "adapter": "smollm2-command-v3",
+  "embedding_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "chunk_file_sha256": "7aa572699ecf55b0b55b885bdee53bf44e94fbed45e808f8528ffb9aa23f5100",
+  "threshold_status": "provisional; development-selected",
+  "records": [
+    {
+      "question": "Which Linux command prints the kernel release?",
+      "top_chunk_id": "linux-commands-001:v1:kernel-release",
+      "similarity": 0.8655211925506592,
+      "threshold": 0.5,
+      "model_called": true,
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: Which Linux command prints the kernel release?\nContext: Kernel release\n\nCommand: uname -r\nPurpose: Print the kernel release.\nAnswer:\n",
+      "answer": "uname -r",
+      "ended_with_eos": true,
+      "supplied_evidence": {
+        "chunk_id": "linux-commands-001:v1:kernel-release",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 28,
+        "end_line": 31
+      },
+      "human_review": "pending"
+    },
+    {
+      "question": "How do I find my current folder's path in Linux?",
+      "top_chunk_id": "linux-commands-001:v1:current-working-directory",
+      "similarity": 0.6275169253349304,
+      "threshold": 0.5,
+      "model_called": true,
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: How do I find my current folder's path in Linux?\nContext: Current working directory\n\nCommand: pwd\nPurpose: Print the current working directory.\nAnswer:\n",
+      "answer": "pwd",
+      "ended_with_eos": true,
+      "supplied_evidence": {
+        "chunk_id": "linux-commands-001:v1:current-working-directory",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 8,
+        "end_line": 11
+      },
+      "human_review": "pending"
+    },
+    {
+      "question": "What is Meridian's escalation telephone number?",
+      "top_chunk_id": "linux-commands-001:v1:current-user",
+      "similarity": 0.1628987193107605,
+      "threshold": 0.5,
+      "model_called": false,
+      "answer": "No evidence passed the retrieval gate. Please clarify the question or supply a relevant source.",
+      "supplied_evidence": null
+    }
+  ]
+}

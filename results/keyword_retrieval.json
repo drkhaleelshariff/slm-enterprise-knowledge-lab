@@ -1,0 +1,92 @@
+{
+  "method": "distinct keyword overlap with stop-word removal",
+  "top_k": 2,
+  "chunk_count": 5,
+  "records": [
+    {
+      "id": "kernel",
+      "query": "Which Linux command prints the kernel release?",
+      "expected_chunk": "linux-commands-001:v1:kernel-release",
+      "top1_correct": true,
+      "hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:kernel-release",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Kernel release",
+          "start_line": 28,
+          "end_line": 31,
+          "text": "Kernel release\n\nCommand: uname -r\nPurpose: Print the kernel release.",
+          "score": 3,
+          "matched_terms": [
+            "command",
+            "kernel",
+            "release"
+          ]
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-user",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current user",
+          "start_line": 13,
+          "end_line": 16,
+          "text": "Current user\n\nCommand: whoami\nPurpose: Print the user name associated with the effective user ID.",
+          "score": 1,
+          "matched_terms": [
+            "command"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "space",
+      "query": "Show filesystem space usage.",
+      "expected_chunk": "linux-commands-001:v1:filesystem-space",
+      "top1_correct": true,
+      "hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:filesystem-space",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Filesystem space",
+          "start_line": 23,
+          "end_line": 26,
+          "text": "Filesystem space\n\nCommand: df -h\nPurpose: Display filesystem space usage in human-readable units.",
+          "score": 3,
+          "matched_terms": [
+            "filesystem",
+            "space",
+            "usage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paraphrase",
+      "query": "Where am I?",
+      "expected_chunk": "linux-commands-001:v1:current-working-directory",
+      "top1_correct": false,
+      "hits": []
+    },
+    {
+      "id": "missing-policy",
+      "query": "Meridian escalation telephone?",
+      "expected_chunk": null,
+      "top1_correct": null,
+      "hits": []
+    }
+  ],
+  "limitations": [
+    "No semantic understanding or synonym handling.",
+    "Shared generic words can produce irrelevant matches.",
+    "A positive score does not establish answer sufficiency.",
+    "No keyword match does not prove the source lacks an answer."
+  ]
+}

@@ -1,0 +1,2 @@
+{"id":"validation-host-01","group":"linux_hostname","instruction":"Which command displays the Linux host name?","input":"","output":"hostname"}
+{"id":"validation-host-02","group":"linux_hostname","instruction":"How do I print the machine host name on Linux?","input":"","output":"hostname"}

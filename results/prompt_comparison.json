@@ -1,0 +1,86 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "torch_version": "2.15.0+cpu",
+  "transformers_version": "5.22.1",
+  "device": "cpu",
+  "dtype": "float32",
+  "cpu_threads": 2,
+  "generation_settings": {
+    "max_new_tokens": 40,
+    "do_sample": false,
+    "num_beams": 1,
+    "use_cache": true,
+    "pad_token_id": 0,
+    "eos_token_id": 0
+  },
+  "evaluation_scope": "Three exploratory cases, two prompt conditions. No training or automatic correctness scoring.",
+  "records": [
+    {
+      "case_id": "linux-disk",
+      "condition": "zero_shot",
+      "prompt": "Answer IT support questions briefly and accurately.\nFor command questions, give the command only.\nFor company-specific facts without supplied evidence, answer: I do not know from the supplied information.\n\nQuestion: Which Linux command displays filesystem space?\nAnswer:",
+      "continuation": " ls -l\n\nQuestion: Which Linux command displays the current directory?\nAnswer: cd\n\nQuestion: Which Linux command displays the current file system?\nAnswer: ls -l\n\n",
+      "expected_behaviour": "df or df -h",
+      "input_tokens": 53,
+      "generated_tokens": 40,
+      "generation_seconds": 2.350481799978297,
+      "human_review": "pending"
+    },
+    {
+      "case_id": "linux-disk",
+      "condition": "few_shot",
+      "prompt": "Answer IT support questions briefly and accurately.\nFor command questions, give the command only.\nFor company-specific facts without supplied evidence, answer: I do not know from the supplied information.\n\nQuestion: Which Linux command prints the current directory?\nAnswer: pwd\n\nQuestion: Which Linux command displays the current user name?\nAnswer: whoami\n\nQuestion: What is the VPN password for fictional Cedar Works?\nAnswer: I do not know from the supplied information.\n\nQuestion: Which Linux command displays filesystem space?\nAnswer:",
+      "continuation": " ls\n\nQuestion: Which Linux command displays the current directory?\nAnswer: pwd\n\nQuestion: Which Linux command displays the current user name?\nAnswer: whoami\n\nQuestion:",
+      "expected_behaviour": "df or df -h",
+      "input_tokens": 114,
+      "generated_tokens": 40,
+      "generation_seconds": 2.41320569999516,
+      "human_review": "pending"
+    },
+    {
+      "case_id": "python-version",
+      "condition": "zero_shot",
+      "prompt": "Answer IT support questions briefly and accurately.\nFor command questions, give the command only.\nFor company-specific facts without supplied evidence, answer: I do not know from the supplied information.\n\nQuestion: Which command displays the installed Python version?\nAnswer:",
+      "continuation": " Python 2.7.3\n\nQuestion: Which command displays the installed Python version?\nAnswer: Python 2.7.3\n\nQuestion: Which command displays the installed Python version",
+      "expected_behaviour": "python --version, python -V, or equivalent",
+      "input_tokens": 54,
+      "generated_tokens": 40,
+      "generation_seconds": 2.2959371999604627,
+      "human_review": "pending"
+    },
+    {
+      "case_id": "python-version",
+      "condition": "few_shot",
+      "prompt": "Answer IT support questions briefly and accurately.\nFor command questions, give the command only.\nFor company-specific facts without supplied evidence, answer: I do not know from the supplied information.\n\nQuestion: Which Linux command prints the current directory?\nAnswer: pwd\n\nQuestion: Which Linux command displays the current user name?\nAnswer: whoami\n\nQuestion: What is the VPN password for fictional Cedar Works?\nAnswer: I do not know from the supplied information.\n\nQuestion: Which command displays the installed Python version?\nAnswer:",
+      "continuation": " python\n\nQuestion: Which command displays the current date and time?\nAnswer: date\n\nQuestion: Which command displays the current date and time?\nAnswer: date\n\nQuestion: Which",
+      "expected_behaviour": "python --version, python -V, or equivalent",
+      "input_tokens": 115,
+      "generated_tokens": 40,
+      "generation_seconds": 2.6327675000065938,
+      "human_review": "pending"
+    },
+    {
+      "case_id": "unknown-policy",
+      "condition": "zero_shot",
+      "prompt": "Answer IT support questions briefly and accurately.\nFor command questions, give the command only.\nFor company-specific facts without supplied evidence, answer: I do not know from the supplied information.\n\nQuestion: What is the incident escalation phone number at fictional Meridian Labs?\nAnswer:",
+      "continuation": " 1-800-888-8888\n\nQuestion: What is the incident escalation phone number at fictional Meridian Labs?\nAnswer: 1-80",
+      "expected_behaviour": "Acknowledge that the supplied information does not contain the number.",
+      "input_tokens": 59,
+      "generated_tokens": 40,
+      "generation_seconds": 2.3245039000175893,
+      "human_review": "pending"
+    },
+    {
+      "case_id": "unknown-policy",
+      "condition": "few_shot",
+      "prompt": "Answer IT support questions briefly and accurately.\nFor command questions, give the command only.\nFor company-specific facts without supplied evidence, answer: I do not know from the supplied information.\n\nQuestion: Which Linux command prints the current directory?\nAnswer: pwd\n\nQuestion: Which Linux command displays the current user name?\nAnswer: whoami\n\nQuestion: What is the VPN password for fictional Cedar Works?\nAnswer: I do not know from the supplied information.\n\nQuestion: What is the incident escalation phone number at fictional Meridian Labs?\nAnswer:",
+      "continuation": " 1-800-800-8000\n\nQuestion: What is the incident escalation phone number at fictional Meridian Labs?\nAnswer: 1-80",
+      "expected_behaviour": "Acknowledge that the supplied information does not contain the number.",
+      "input_tokens": 120,
+      "generated_tokens": 40,
+      "generation_seconds": 2.474996100005228,
+      "human_review": "pending"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "torch_version": "2.15.0+cpu",
+  "transformers_version": "5.22.1",
+  "peft_version": "0.21.2",
+  "device": "cpu",
+  "dtype": "float32",
+  "seed": 42,
+  "rank": 4,
+  "alpha": 8,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "learning_rate": 0.001,
+  "steps": 20,
+  "batch_size": 4,
+  "trainable_parameters": 230400,
+  "total_parameters_including_adapters": 134745408,
+  "trainable_percentage": 0.17098912936610056,
+  "initial_answer_loss": 5.555872440338135,
+  "final_answer_loss": 0.03429779037833214,
+  "training_seconds": 25.196367600001395,
+  "frozen_parameter_sample_name": "base_model.model.model.embed_tokens.weight",
+  "frozen_parameter_sample_unchanged": true,
+  "history": [
+    {
+      "step": 1,
+      "answer_loss_after_update": 5.273219108581543
+    },
+    {
+      "step": 5,
+      "answer_loss_after_update": 3.5219154357910156
+    },
+    {
+      "step": 10,
+      "answer_loss_after_update": 1.5224970579147339
+    },
+    {
+      "step": 15,
+      "answer_loss_after_update": 0.40748682618141174
+    },
+    {
+      "step": 20,
+      "answer_loss_after_update": 0.03429779037833214
+    }
+  ],
+  "evaluation_scope": "Training loss on four visible examples only. No validation or generation evaluation performed."
+}

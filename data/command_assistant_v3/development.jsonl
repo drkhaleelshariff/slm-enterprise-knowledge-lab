@@ -1,0 +1,6 @@
+{"id":"dev-001","evaluation_type":"known_task_new_wording","group":"linux_current_directory","instruction":"On Linux, how can I print the full path of the directory I am currently in?","input":"","output":"pwd"}
+{"id":"dev-002","evaluation_type":"known_task_new_wording","group":"linux_hostname","instruction":"What command prints this Linux computer's host name?","input":"","output":"hostname"}
+{"id":"dev-003","evaluation_type":"known_task_new_wording","group":"linux_filesystem_space","instruction":"Display filesystem capacity, usage, and available space using readable units on Linux.","input":"","output":"df -h"}
+{"id":"dev-004","evaluation_type":"known_task_new_wording","group":"python_version","instruction":"How can I ask the python executable to report its version and exit?","input":"","output":"python --version"}
+{"id":"dev-005","evaluation_type":"unseen_command_task","group":"linux_kernel_release","instruction":"Which Linux command prints the kernel release?","input":"","output":"uname -r"}
+{"id":"dev-006","evaluation_type":"new_unknown_fact","group":"unknown_company_contact","instruction":"What is the internal IT helpdesk email address at fictional Northstar Devices?","input":"","output":"I do not know from the supplied information."}

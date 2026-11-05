@@ -1,0 +1,195 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "development_file_sha256": "c6a8a441df65eacec62bc11daff7f89ce461fee70951731a57b9eb5cb6f6a04e",
+  "generation_settings": {
+    "max_new_tokens": 32,
+    "do_sample": false,
+    "num_beams": 1,
+    "use_cache": true,
+    "pad_token_id": 0,
+    "eos_token_id": 0
+  },
+  "summary": {
+    "base": {
+      "known_task_new_wording": {
+        "exact_matches": 0,
+        "total": 4
+      },
+      "new_unknown_fact": {
+        "exact_matches": 0,
+        "total": 1
+      },
+      "unseen_command_task": {
+        "exact_matches": 0,
+        "total": 1
+      }
+    },
+    "v3_adapter": {
+      "known_task_new_wording": {
+        "exact_matches": 4,
+        "total": 4
+      },
+      "new_unknown_fact": {
+        "exact_matches": 1,
+        "total": 1
+      },
+      "unseen_command_task": {
+        "exact_matches": 0,
+        "total": 1
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "dev-001",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "base",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: On Linux, how can I print the full path of the directory I am currently in?\nAnswer:\n",
+      "expected": "pwd",
+      "answer": "Question: How can I get the full path of the directory I am currently in?\nAnswer:\n\nQuestion: How can I get the full path",
+      "exact_match": false,
+      "ended_with_eos": false,
+      "generated_tokens": 32,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-001",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "v3_adapter",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: On Linux, how can I print the full path of the directory I am currently in?\nAnswer:\n",
+      "expected": "pwd",
+      "answer": "pwd",
+      "exact_match": true,
+      "ended_with_eos": true,
+      "generated_tokens": 3,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-002",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "base",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: What command prints this Linux computer's host name?\nAnswer:\n",
+      "expected": "hostname",
+      "answer": "Question: What command prints this Linux computer's hostname?\nAnswer:\n\nQuestion: What command prints this Linux computer's IP address?\nAnswer:",
+      "exact_match": false,
+      "ended_with_eos": false,
+      "generated_tokens": 32,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-002",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "v3_adapter",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: What command prints this Linux computer's host name?\nAnswer:\n",
+      "expected": "hostname",
+      "answer": "hostname",
+      "exact_match": true,
+      "ended_with_eos": true,
+      "generated_tokens": 2,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-003",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "base",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: Display filesystem capacity, usage, and available space using readable units on Linux.\nAnswer:\n",
+      "expected": "df -h",
+      "answer": "Linux has a built-in filesystem capacity, which is the number of blocks that can be allocated to a file. The capacity is measured in blocks, which",
+      "exact_match": false,
+      "ended_with_eos": false,
+      "generated_tokens": 32,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-003",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "v3_adapter",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: Display filesystem capacity, usage, and available space using readable units on Linux.\nAnswer:\n",
+      "expected": "df -h",
+      "answer": "df -h",
+      "exact_match": true,
+      "ended_with_eos": true,
+      "generated_tokens": 4,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-004",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "base",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: How can I ask the python executable to report its version and exit?\nAnswer:\n",
+      "expected": "python --version",
+      "answer": "If the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: How can I ask the python executable to report",
+      "exact_match": false,
+      "ended_with_eos": false,
+      "generated_tokens": 32,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-004",
+      "evaluation_type": "known_task_new_wording",
+      "condition": "v3_adapter",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: How can I ask the python executable to report its version and exit?\nAnswer:\n",
+      "expected": "python --version",
+      "answer": "python --version",
+      "exact_match": true,
+      "ended_with_eos": true,
+      "generated_tokens": 4,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-005",
+      "evaluation_type": "unseen_command_task",
+      "condition": "base",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: Which Linux command prints the kernel release?\nAnswer:\n",
+      "expected": "uname -r",
+      "answer": "The kernel release command prints the kernel release.\n\nQuestion: Which Linux command prints the kernel release?\nAnswer:\nThe kernel release command prints the kernel",
+      "exact_match": false,
+      "ended_with_eos": false,
+      "generated_tokens": 32,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-005",
+      "evaluation_type": "unseen_command_task",
+      "condition": "v3_adapter",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: Which Linux command prints the kernel release?\nAnswer:\n",
+      "expected": "uname -r",
+      "answer": "kpartx -l",
+      "exact_match": false,
+      "ended_with_eos": true,
+      "generated_tokens": 6,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-006",
+      "evaluation_type": "new_unknown_fact",
+      "condition": "base",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: What is the internal IT helpdesk email address at fictional Northstar Devices?\nAnswer:\n",
+      "expected": "I do not know from the supplied information.",
+      "answer": "Question: What is the internal IT helpdesk email address at fictional Northstar Devices?\nAnswer:\n\nQuestion: What is the internal IT help",
+      "exact_match": false,
+      "ended_with_eos": false,
+      "generated_tokens": 32,
+      "human_review": "pending"
+    },
+    {
+      "id": "dev-006",
+      "evaluation_type": "new_unknown_fact",
+      "condition": "v3_adapter",
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\n\nQuestion: What is the internal IT helpdesk email address at fictional Northstar Devices?\nAnswer:\n",
+      "expected": "I do not know from the supplied information.",
+      "answer": "I do not know from the supplied information.",
+      "exact_match": true,
+      "ended_with_eos": true,
+      "generated_tokens": 10,
+      "human_review": "pending"
+    }
+  ],
+  "limitations": [
+    "Six visible development questions, not a sealed test set.",
+    "Exact matching can reject valid alternative commands or wording.",
+    "One unknown-fact probe does not establish reliable abstention.",
+    "V1 and V2 differ in data and instructions; effects are not isolated."
+  ]
+}

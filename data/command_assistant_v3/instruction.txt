@@ -1,0 +1,4 @@
+﻿Answer the IT support question briefly.
+For command questions, return only the command.
+If the supplied information is insufficient, say:
+I do not know from the supplied information.

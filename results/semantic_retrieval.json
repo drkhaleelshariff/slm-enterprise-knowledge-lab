@@ -1,0 +1,166 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "sentence_transformers_version": "6.2.0",
+  "chunk_file_sha256": "7aa572699ecf55b0b55b885bdee53bf44e94fbed45e808f8528ffb9aa23f5100",
+  "document_embedding_shape": [
+    5,
+    384
+  ],
+  "method": "cosine similarity using normalized embeddings",
+  "top_k": 2,
+  "threshold": null,
+  "records": [
+    {
+      "query": "Which Linux command prints the kernel release?",
+      "hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:kernel-release",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Kernel release",
+          "start_line": 28,
+          "end_line": 31,
+          "text": "Kernel release\n\nCommand: uname -r\nPurpose: Print the kernel release.",
+          "cosine_similarity": 0.8655211925506592
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current working directory",
+          "start_line": 8,
+          "end_line": 11,
+          "text": "Current working directory\n\nCommand: pwd\nPurpose: Print the current working directory.",
+          "cosine_similarity": 0.3938203454017639
+        }
+      ]
+    },
+    {
+      "query": "Show filesystem space usage.",
+      "hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:filesystem-space",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Filesystem space",
+          "start_line": 23,
+          "end_line": 26,
+          "text": "Filesystem space\n\nCommand: df -h\nPurpose: Display filesystem space usage in human-readable units.",
+          "cosine_similarity": 0.7740702033042908
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current working directory",
+          "start_line": 8,
+          "end_line": 11,
+          "text": "Current working directory\n\nCommand: pwd\nPurpose: Print the current working directory.",
+          "cosine_similarity": 0.26555031538009644
+        }
+      ]
+    },
+    {
+      "query": "Where am I?",
+      "hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current working directory",
+          "start_line": 8,
+          "end_line": 11,
+          "text": "Current working directory\n\nCommand: pwd\nPurpose: Print the current working directory.",
+          "cosine_similarity": 0.11043287813663483
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:kernel-release",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Kernel release",
+          "start_line": 28,
+          "end_line": 31,
+          "text": "Kernel release\n\nCommand: uname -r\nPurpose: Print the kernel release.",
+          "cosine_similarity": 0.07862143963575363
+        }
+      ]
+    },
+    {
+      "query": "In a Linux terminal, how do I find my current folder's path?",
+      "hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current working directory",
+          "start_line": 8,
+          "end_line": 11,
+          "text": "Current working directory\n\nCommand: pwd\nPurpose: Print the current working directory.",
+          "cosine_similarity": 0.6298463344573975
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-user",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current user",
+          "start_line": 13,
+          "end_line": 16,
+          "text": "Current user\n\nCommand: whoami\nPurpose: Print the user name associated with the effective user ID.",
+          "cosine_similarity": 0.27698057889938354
+        }
+      ]
+    },
+    {
+      "query": "Meridian escalation telephone?",
+      "hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:current-user",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current user",
+          "start_line": 13,
+          "end_line": 16,
+          "text": "Current user\n\nCommand: whoami\nPurpose: Print the user name associated with the effective user ID.",
+          "cosine_similarity": 0.08461429178714752
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "document_id": "linux-commands-001",
+          "document_version": "1",
+          "source_path": "data/knowledge_sources/linux_commands.md",
+          "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+          "section_title": "Current working directory",
+          "start_line": 8,
+          "end_line": 11,
+          "text": "Current working directory\n\nCommand: pwd\nPurpose: Print the current working directory.",
+          "cosine_similarity": 0.0752599835395813
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Always returns nearest candidates, even for missing answers.",
+    "Similarity is not a probability of correctness.",
+    "The question 'Where am I?' is ambiguous.",
+    "No answer generation or evidence-sufficiency check performed."
+  ]
+}

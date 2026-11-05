@@ -1,0 +1,16 @@
+{"id":"v2-001","group":"linux_current_directory","instruction":"Which Linux command prints the working directory?","input":"","output":"pwd"}
+{"id":"v2-002","group":"linux_current_directory","instruction":"Show the absolute path of my current directory on Linux.","input":"","output":"pwd"}
+{"id":"v2-003","group":"linux_current_user","instruction":"Which command prints my current Linux user name?","input":"","output":"whoami"}
+{"id":"v2-004","group":"linux_current_user","instruction":"How do I display the user name associated with my effective user ID on Linux?","input":"","output":"whoami"}
+{"id":"v2-005","group":"linux_hostname","instruction":"Which command displays the Linux host name?","input":"","output":"hostname"}
+{"id":"v2-006","group":"linux_hostname","instruction":"Print the host name of this Linux machine.","input":"","output":"hostname"}
+{"id":"v2-007","group":"linux_filesystem_space","instruction":"Which Linux command displays filesystem space in human-readable units?","input":"","output":"df -h"}
+{"id":"v2-008","group":"linux_filesystem_space","instruction":"Show used and available filesystem space on Linux in human-readable units.","input":"","output":"df -h"}
+{"id":"v2-009","group":"python_version","instruction":"Which command displays the installed Python version?","input":"","output":"python --version"}
+{"id":"v2-010","group":"python_version","instruction":"Print the version of the Python interpreter invoked as python.","input":"","output":"python --version"}
+{"id":"v2-011","group":"unknown_company_phone","instruction":"What is the incident escalation phone number at fictional Meridian Labs?","input":"","output":"I do not know from the supplied information."}
+{"id":"v2-012","group":"unknown_company_policy","instruction":"How many days does fictional Cedar Works retain incident logs?","input":"","output":"I do not know from the supplied information."}
+{"id":"v3-013","group":"python_version","instruction":"Show the version number of the interpreter named python without opening an interactive session.","input":"","output":"python --version"}
+{"id":"v3-014","group":"python_version","instruction":"Which option makes python print its version number?","input":"","output":"python --version"}
+{"id":"v3-015","group":"python_version","instruction":"From a terminal, display the Python interpreter version without running a script.","input":"","output":"python --version"}
+{"id":"v3-016","group":"python_version","instruction":"Give a command that reports the version of python and then terminates.","input":"","output":"python --version"}

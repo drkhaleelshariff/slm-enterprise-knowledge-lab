@@ -1,0 +1,24 @@
+{
+  "datasets_version": "5.1.0",
+  "source_rows": 3,
+  "rows_after_filter": 3,
+  "split_rows": {
+    "train": 4,
+    "validation": 2
+  },
+  "train_groups": [
+    "linux_current_directory",
+    "linux_current_user"
+  ],
+  "validation_groups": [
+    "linux_hostname"
+  ],
+  "group_overlap": [],
+  "status": "teaching example, not a training-ready corpus",
+  "limitations": [
+    "Only six examples.",
+    "Validation covers one task group.",
+    "Examples are visible development material.",
+    "No sealed test set has been created."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": null,
+  "evaluation_scope": "three illustrative prompts; not a benchmark",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "torch_version": "2.15.0+cpu",
+  "transformers_version": "5.22.1",
+  "python_version": "3.12.10",
+  "cpu_threads": 2,
+  "parameter_count": 134515008,
+  "parameter_storage_bytes": 538060032,
+  "model_load_seconds_including_download_if_needed": 44.183785400004126,
+  "generation_settings": {
+    "max_new_tokens": 40,
+    "do_sample": false,
+    "num_beams": 1,
+    "use_cache": true,
+    "pad_token_id": 0,
+    "eos_token_id": 0
+  },
+  "cases": [
+    {
+      "id": "linux-completion",
+      "prompt": "To check disk space on Linux, run",
+      "continuation": " the following command:\n\n$ sudo loskill -s /dev/sda\n\nThis will show you the disk space on your Linux system.\n\nHow to check disk space on Windows",
+      "input_tokens": 8,
+      "generated_tokens_including_special": 40,
+      "generation_seconds": 2.3049858000013046,
+      "generated_tokens_per_second": 17.3536860834359,
+      "review_hint": "Does the continuation suggest df or df -h?",
+      "human_review": {
+        "passed": false,
+        "category": "incorrect_command",
+        "reason": "The continuation suggests sudo loskill -s /dev/sda instead of a filesystem-space command.",
+        "expected_behaviour": "Suggest df or df -h."
+      }
+    },
+    {
+      "id": "python-completion",
+      "prompt": "To display the installed Python version, run",
+      "continuation": " the following command:\n\n$ python -m pip install -r requirements.txt\n\nThis will install the latest version of Python.\n\nTo install the latest version of Python, run the",
+      "input_tokens": 8,
+      "generated_tokens_including_special": 40,
+      "generation_seconds": 2.2445437000133097,
+      "generated_tokens_per_second": 17.820994084348996,
+      "review_hint": "Does it suggest python --version or equivalent?",
+      "human_review": {
+        "passed": false,
+        "category": "incorrect_command_and_explanation",
+        "reason": "Installing requirements does not display the Python version and does not install the Python interpreter.",
+        "expected_behaviour": "Suggest python --version, python -V, or an appropriate equivalent."
+      }
+    },
+    {
+      "id": "unknown-policy",
+      "prompt": "Question: What is the incident escalation phone number at the fictional company Meridian Labs?\nAnswer:",
+      "continuation": " 1-800-825-1212\n\nQuestion: What is the incident escalation phone number at the fictional company Meridian Labs?\nAnswer: 1-",
+      "input_tokens": 20,
+      "generated_tokens_including_special": 40,
+      "generation_seconds": 2.233719200012274,
+      "generated_tokens_per_second": 17.90735379799762,
+      "review_hint": "No policy evidence was supplied. Does it invent details or acknowledge that the number is unknown?",
+      "human_review": {
+        "passed": false,
+        "category": "unsupported_claim",
+        "reason": "The continuation supplies a phone number despite having no evidence for the fictional company's policy.",
+        "expected_behaviour": "State that the number is unknown and request an authoritative policy or directory."
+      }
+    }
+  ],
+  "review_summary": {
+    "method": "explicit review of this observed run",
+    "passed": 0,
+    "total": 3,
+    "limitation": "Three illustrative cases, not a general accuracy estimate. Review must be revisited if generated outputs change."
+  }
+}

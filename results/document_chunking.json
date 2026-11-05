@@ -1,0 +1,14 @@
+{
+  "document_id": "linux-commands-001",
+  "document_version": "1",
+  "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+  "chunking_strategy": "one level-two section per chunk",
+  "chunk_count": 5,
+  "chunk_ids": [
+    "linux-commands-001:v1:current-working-directory",
+    "linux-commands-001:v1:current-user",
+    "linux-commands-001:v1:host-name",
+    "linux-commands-001:v1:filesystem-space",
+    "linux-commands-001:v1:kernel-release"
+  ]
+}

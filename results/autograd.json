@@ -1,0 +1,80 @@
+{
+  "input": 2.0,
+  "target": 6.0,
+  "learning_rate": 0.1,
+  "history": [
+    {
+      "step": 1,
+      "weight_before_update": 1.0,
+      "prediction": 2.0,
+      "loss": 16.0,
+      "gradient": -16.0
+    },
+    {
+      "step": 2,
+      "weight_before_update": 2.5999999046325684,
+      "prediction": 5.199999809265137,
+      "loss": 0.6400002837181091,
+      "gradient": -3.200000762939453
+    },
+    {
+      "step": 3,
+      "weight_before_update": 2.9200000762939453,
+      "prediction": 5.840000152587891,
+      "loss": 0.025599950924515724,
+      "gradient": -0.6399993896484375
+    },
+    {
+      "step": 4,
+      "weight_before_update": 2.9839999675750732,
+      "prediction": 5.9679999351501465,
+      "loss": 0.0010240041883662343,
+      "gradient": -0.12800025939941406
+    },
+    {
+      "step": 5,
+      "weight_before_update": 2.996799945831299,
+      "prediction": 5.993599891662598,
+      "loss": 4.096138582099229e-05,
+      "gradient": -0.025600433349609375
+    },
+    {
+      "step": 6,
+      "weight_before_update": 2.9993600845336914,
+      "prediction": 5.998720169067383,
+      "loss": 1.63796721608378e-06,
+      "gradient": -0.00511932373046875
+    },
+    {
+      "step": 7,
+      "weight_before_update": 2.9998719692230225,
+      "prediction": 5.999743938446045,
+      "loss": 6.556751941388939e-08,
+      "gradient": -0.0010242462158203125
+    },
+    {
+      "step": 8,
+      "weight_before_update": 2.999974489212036,
+      "prediction": 5.999948978424072,
+      "loss": 2.603201210149564e-09,
+      "gradient": -0.0002040863037109375
+    },
+    {
+      "step": 9,
+      "weight_before_update": 2.999994993209839,
+      "prediction": 5.999989986419678,
+      "loss": 1.0027179087046534e-10,
+      "gradient": -4.00543212890625e-05
+    },
+    {
+      "step": 10,
+      "weight_before_update": 2.9999990463256836,
+      "prediction": 5.999998092651367,
+      "loss": 3.637978807091713e-12,
+      "gradient": -7.62939453125e-06
+    }
+  ],
+  "final_weight": 2.999999761581421,
+  "final_prediction": 5.999999523162842,
+  "final_loss": 2.2737367544323206e-13
+}

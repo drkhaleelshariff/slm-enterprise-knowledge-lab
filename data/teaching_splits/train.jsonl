@@ -1,0 +1,4 @@
+{"id":"train-pwd-01","group":"linux_current_directory","instruction":"Which Linux command prints the working directory?","input":"","output":"pwd"}
+{"id":"train-pwd-02","group":"linux_current_directory","instruction":"How can I display my current directory on Linux?","input":"","output":"pwd"}
+{"id":"train-user-01","group":"linux_current_user","instruction":"Which command prints my current Linux user name?","input":"","output":"whoami"}
+{"id":"train-user-02","group":"linux_current_user","instruction":"How do I identify the current user on Linux?","input":"","output":"whoami"}

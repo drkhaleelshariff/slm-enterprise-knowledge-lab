@@ -1,0 +1,5 @@
+{"id": "ex-001", "instruction": "How do I check disk space on Linux?", "input": "", "output": "Run df -h to inspect filesystem capacity and available space."}
+{"id": "ex-002", "instruction": "How do I list running processes on Linux?", "input": "", "output": "Run ps aux to list processes, or top for an interactive view."}
+{"id": "ex-003", "instruction": "How do I check disk space on Linux?", "input": "", "output": "Run df -h to inspect filesystem capacity and available space."}
+{"id": "ex-004", "instruction": "How do I check my Python version?", "input": "", "output": "   "}
+{"id":"ex-005","instruction":"How do I check the installed Ansible version?","input":"","output":"Run ansible --version to display the installed Ansible version and configuration information."}

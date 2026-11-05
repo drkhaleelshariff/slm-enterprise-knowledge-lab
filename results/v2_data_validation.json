@@ -1,0 +1,18 @@
+{
+  "training_records": 12,
+  "development_records": 6,
+  "unique_ids_across_files": 18,
+  "duplicate_question_context_pairs_across_files": 0,
+  "development_types": {
+    "known_task_new_wording": 4,
+    "unseen_command_task": 1,
+    "new_unknown_fact": 1
+  },
+  "checks_passed": true,
+  "limitations": [
+    "Checks do not establish factual correctness.",
+    "Exact-match checks do not detect semantic paraphrases.",
+    "Task groups are manually assigned.",
+    "Development data is visible, not a sealed test set."
+  ]
+}

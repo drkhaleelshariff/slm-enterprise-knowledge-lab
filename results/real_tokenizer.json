@@ -1,0 +1,214 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "transformers_version": "5.22.1",
+  "tokenizer_class": "GPT2Tokenizer",
+  "vocabulary_entries": 49152,
+  "special_tokens": {
+    "bos_token": "<|endoftext|>",
+    "eos_token": "<|endoftext|>",
+    "unk_token": "<|endoftext|>",
+    "pad_token": "<|endoftext|>"
+  },
+  "pad_token_id": 0,
+  "eos_token_id": 0,
+  "examples": [
+    {
+      "text": "Check disk space.",
+      "pieces": [
+        "Check",
+        "Ġdisk",
+        "Ġspace",
+        "."
+      ],
+      "ids": [
+        10280,
+        10599,
+        1898,
+        30
+      ],
+      "decoded": "Check disk space."
+    },
+    {
+      "text": "Please check the installed Python version.",
+      "pieces": [
+        "Please",
+        "Ġcheck",
+        "Ġthe",
+        "Ġinstalled",
+        "ĠPython",
+        "Ġversion",
+        "."
+      ],
+      "ids": [
+        10180,
+        2545,
+        260,
+        7373,
+        5905,
+        3586,
+        30
+      ],
+      "decoded": "Please check the installed Python version."
+    },
+    {
+      "text": "Troubleshooting tokenization and reproducibility.",
+      "pieces": [
+        "T",
+        "rou",
+        "bles",
+        "h",
+        "ooting",
+        "Ġtoken",
+        "ization",
+        "Ġand",
+        "Ġreprodu",
+        "cibility",
+        "."
+      ],
+      "ids": [
+        68,
+        440,
+        7608,
+        88,
+        19404,
+        9624,
+        1237,
+        284,
+        6000,
+        45876,
+        30
+      ],
+      "decoded": "Troubleshooting tokenization and reproducibility."
+    }
+  ],
+  "batch_shape": [
+    3,
+    11
+  ],
+  "input_ids": [
+    [
+      10280,
+      10599,
+      1898,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10180,
+      2545,
+      260,
+      7373,
+      5905,
+      3586,
+      30,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      68,
+      440,
+      7608,
+      88,
+      19404,
+      9624,
+      1237,
+      284,
+      6000,
+      45876,
+      30
+    ]
+  ],
+  "attention_mask": [
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "labels": [
+    [
+      10280,
+      10599,
+      1898,
+      30,
+      -100,
+      -100,
+      -100,
+      -100,
+      -100,
+      -100,
+      -100
+    ],
+    [
+      10180,
+      2545,
+      260,
+      7373,
+      5905,
+      3586,
+      30,
+      -100,
+      -100,
+      -100,
+      -100
+    ],
+    [
+      68,
+      440,
+      7608,
+      88,
+      19404,
+      9624,
+      1237,
+      284,
+      6000,
+      45876,
+      30
+    ]
+  ],
+  "original_long_text_token_count": 81,
+  "truncated_token_count": 12,
+  "checks_passed": true
+}

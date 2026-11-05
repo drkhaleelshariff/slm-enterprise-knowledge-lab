@@ -1,0 +1,105 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "retrieval_threshold": 0.5,
+  "status": "generation over saved retrieval results",
+  "records": [
+    {
+      "query": "Which Linux command prints the kernel release?",
+      "route": "generation_comparison",
+      "model_called": true,
+      "without_context": {
+        "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: Which Linux command prints the kernel release?\nAnswer:\n",
+        "answer": "kpartx -l",
+        "ended_with_eos": true
+      },
+      "with_context": {
+        "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: Which Linux command prints the kernel release?\nContext: Kernel release\n\nCommand: uname -r\nPurpose: Print the kernel release.\nAnswer:\n",
+        "answer": "uname -r",
+        "ended_with_eos": true
+      },
+      "reference_command": "uname -r",
+      "without_context_exact_match": false,
+      "with_context_exact_match": true,
+      "supplied_evidence": {
+        "chunk_id": "linux-commands-001:v1:kernel-release",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 28,
+        "end_line": 31
+      },
+      "human_review": "pending"
+    },
+    {
+      "query": "Show filesystem space usage.",
+      "route": "generation_comparison",
+      "model_called": true,
+      "without_context": {
+        "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: Show filesystem space usage.\nAnswer:\n",
+        "answer": "df -h",
+        "ended_with_eos": true
+      },
+      "with_context": {
+        "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: Show filesystem space usage.\nContext: Filesystem space\n\nCommand: df -h\nPurpose: Display filesystem space usage in human-readable units.\nAnswer:\n",
+        "answer": "df -h",
+        "ended_with_eos": true
+      },
+      "reference_command": "df -h",
+      "without_context_exact_match": true,
+      "with_context_exact_match": true,
+      "supplied_evidence": {
+        "chunk_id": "linux-commands-001:v1:filesystem-space",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 23,
+        "end_line": 26
+      },
+      "human_review": "pending"
+    },
+    {
+      "query": "Where am I?",
+      "route": "application_withheld",
+      "model_called": false,
+      "response": "No evidence passed the retrieval gate. Please clarify the question or supply a relevant source."
+    },
+    {
+      "query": "In a Linux terminal, how do I find my current folder's path?",
+      "route": "generation_comparison",
+      "model_called": true,
+      "without_context": {
+        "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: In a Linux terminal, how do I find my current folder's path?\nAnswer:\n",
+        "answer": "pwd",
+        "ended_with_eos": true
+      },
+      "with_context": {
+        "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: In a Linux terminal, how do I find my current folder's path?\nContext: Current working directory\n\nCommand: pwd\nPurpose: Print the current working directory.\nAnswer:\n",
+        "answer": "pwd",
+        "ended_with_eos": true
+      },
+      "reference_command": "pwd",
+      "without_context_exact_match": true,
+      "with_context_exact_match": true,
+      "supplied_evidence": {
+        "chunk_id": "linux-commands-001:v1:current-working-directory",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 8,
+        "end_line": 11
+      },
+      "human_review": "pending"
+    },
+    {
+      "query": "Meridian escalation telephone?",
+      "route": "application_withheld",
+      "model_called": false,
+      "response": "No evidence passed the retrieval gate. Please clarify the question or supply a relevant source."
+    }
+  ],
+  "limitations": [
+    "Three answerable development probes only.",
+    "Threshold was selected using these observed examples.",
+    "V3 was not trained on examples containing supplied context.",
+    "Evidence provenance is not proof of answer groundedness.",
+    "No live retrieval or automatic citation validation."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "status": "pre-adaptation answer-only loss verification",
+  "weights_updated": false,
+  "internal_loss": 5.555872440338135,
+  "manual_loss": 5.555872440338135,
+  "absolute_difference": 0.0,
+  "losses_match": true,
+  "supervised_target_count": 12,
+  "per_example_answer_loss": [
+    4.255002975463867,
+    5.626152038574219,
+    5.638185024261475,
+    6.704150676727295
+  ]
+}

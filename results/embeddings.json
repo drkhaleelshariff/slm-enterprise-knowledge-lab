@@ -1,0 +1,77 @@
+{
+  "seed": 42,
+  "embedding_status": "random initialization; not trained",
+  "vocabulary": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "check": 2,
+    "disk": 3,
+    "space": 4,
+    "python": 5,
+    "version": 6,
+    "please": 7
+  },
+  "sentences": [
+    "check disk space",
+    "please check python version"
+  ],
+  "token_ids": [
+    [
+      2,
+      3,
+      4,
+      0,
+      0
+    ],
+    [
+      7,
+      2,
+      5,
+      6,
+      0
+    ]
+  ],
+  "attention_mask": [
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "embedding_table_shape": [
+    8,
+    4
+  ],
+  "token_embedding_shape": [
+    2,
+    5,
+    4
+  ],
+  "sentence_vector_shape": [
+    2,
+    4
+  ],
+  "sentence_vectors": [
+    [
+      0.05410011485219002,
+      0.3098984360694885,
+      -0.5529050230979919,
+      -0.06719082593917847
+    ],
+    [
+      -0.11569157242774963,
+      1.0163058042526245,
+      0.19180327653884888,
+      0.617902398109436
+    ]
+  ]
+}
