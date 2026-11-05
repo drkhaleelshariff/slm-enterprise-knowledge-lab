@@ -1,0 +1,22 @@
+{
+  "query": "Which Linux command prints the kernel release?",
+  "index_directory": "indexes/linux_commands_v1",
+  "embedding_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "document_embeddings_recomputed": false,
+  "hits": [
+    {
+      "chunk_id": "linux-commands-001:v1:kernel-release",
+      "section_title": "Kernel release",
+      "cosine_similarity": 0.8655211925506592
+    },
+    {
+      "chunk_id": "linux-commands-001:v1:current-working-directory",
+      "section_title": "Current working directory",
+      "cosine_similarity": 0.3938203752040863
+    }
+  ],
+  "limitation": "Nearest candidates only; no relevance gate or generation."
+}

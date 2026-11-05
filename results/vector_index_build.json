@@ -1,0 +1,10 @@
+{
+  "index_directory": "indexes/linux_commands_v1",
+  "vector_shape": [
+    5,
+    384
+  ],
+  "vector_dtype": "float32",
+  "vector_array_bytes": 7680,
+  "disk_roundtrip_exact": true
+}

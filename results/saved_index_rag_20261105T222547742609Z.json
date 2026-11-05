@@ -1,0 +1,66 @@
+{
+  "generation_model": "HuggingFaceTB/SmolLM2-135M",
+  "generation_model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "adapter": "smollm2-command-v3",
+  "embedding_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "chunk_file_sha256": "7aa572699ecf55b0b55b885bdee53bf44e94fbed45e808f8528ffb9aa23f5100",
+  "threshold_status": "provisional; development-selected",
+  "document_embeddings_recomputed": false,
+  "index_directory": "indexes/linux_commands_v1",
+  "index_manifest": {
+    "format": "normalized float32 NumPy vectors with ordered metadata",
+    "embedding_model": {
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    },
+    "chunk_file": "data/knowledge_chunks/linux_commands.jsonl",
+    "chunk_file_sha256": "7aa572699ecf55b0b55b885bdee53bf44e94fbed45e808f8528ffb9aa23f5100",
+    "vector_shape": [
+      5,
+      384
+    ],
+    "vector_dtype": "float32",
+    "normalized": true,
+    "row_chunk_ids": [
+      "linux-commands-001:v1:current-working-directory",
+      "linux-commands-001:v1:current-user",
+      "linux-commands-001:v1:host-name",
+      "linux-commands-001:v1:filesystem-space",
+      "linux-commands-001:v1:kernel-release"
+    ],
+    "vectors_sha256": "083920e8522820f5baf6e4a5421963069c6bbb696d914bfd4cee2f8c7f47cabc",
+    "metadata_sha256": "b22f31f09bbdaae331bdb24198fe88e5d868d0876bf646870f47dd2fc9e865cc"
+  },
+  "records": [
+    {
+      "question": "Which Linux command prints the kernel release?",
+      "top_chunk_id": "linux-commands-001:v1:kernel-release",
+      "similarity": 0.8655211925506592,
+      "threshold": 0.5,
+      "model_called": true,
+      "prompt": "Answer the IT support question briefly.\nFor command questions, return only the command.\nIf the supplied information is insufficient, say:\nI do not know from the supplied information.\nUse supplied context as evidence when present.\n\nQuestion: Which Linux command prints the kernel release?\nContext: Kernel release\n\nCommand: uname -r\nPurpose: Print the kernel release.\nAnswer:\n",
+      "answer": "uname -r",
+      "ended_with_eos": true,
+      "supplied_evidence": {
+        "chunk_id": "linux-commands-001:v1:kernel-release",
+        "source_path": "data/knowledge_sources/linux_commands.md",
+        "source_sha256": "27018a319f0e97e6a8c261a244906bea4426400feb3018002c60c10ff8f6f629",
+        "start_line": 28,
+        "end_line": 31
+      },
+      "human_review": "pending"
+    },
+    {
+      "question": "What is Meridian's escalation telephone number?",
+      "top_chunk_id": "linux-commands-001:v1:current-user",
+      "similarity": 0.1628987193107605,
+      "threshold": 0.5,
+      "model_called": false,
+      "answer": "No evidence passed the retrieval gate. Please clarify the question or supply a relevant source.",
+      "supplied_evidence": null
+    }
+  ]
+}

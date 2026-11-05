@@ -27,3 +27,6 @@ private_data/
 use-local-env.ps1
 *.tmp
 docs/experiment_v3_before_cleanup.txt
+
+# Generated vector indexes
+indexes/
