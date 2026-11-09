@@ -10,6 +10,7 @@ cloudpickle==3.1.2
 colorama==0.4.6
 datasets==5.1.0
 dill==0.4.1
+faiss-cpu==1.15.1
 filelock==4.2.4
 frozenlist==1.8.0
 fsspec==2026.7.0

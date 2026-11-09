@@ -1,0 +1,94 @@
+{
+  "faiss_version": "1.15.1",
+  "index_type": "IndexFlatIP",
+  "search_type": "exact inner product on normalized vectors",
+  "vector_shape": [
+    5,
+    384
+  ],
+  "embedding_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "document_embeddings_recomputed": false,
+  "records": [
+    {
+      "question": "Which Linux command prints the kernel release?",
+      "scores_agree": true,
+      "full_ranking_agrees": true,
+      "maximum_score_difference": 1.1920928955078125e-07,
+      "top_hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:kernel-release",
+          "section_title": "Kernel release",
+          "cosine_similarity": 0.8655211329460144
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "section_title": "Current working directory",
+          "cosine_similarity": 0.3938204050064087
+        }
+      ]
+    },
+    {
+      "question": "Show filesystem space usage.",
+      "scores_agree": true,
+      "full_ranking_agrees": true,
+      "maximum_score_difference": 1.1920928955078125e-07,
+      "top_hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:filesystem-space",
+          "section_title": "Filesystem space",
+          "cosine_similarity": 0.7740702629089355
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "section_title": "Current working directory",
+          "cosine_similarity": 0.26555028557777405
+        }
+      ]
+    },
+    {
+      "question": "In a Linux terminal, how do I find my current folder's path?",
+      "scores_agree": true,
+      "full_ranking_agrees": true,
+      "maximum_score_difference": 1.1920928955078125e-07,
+      "top_hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "section_title": "Current working directory",
+          "cosine_similarity": 0.6298463344573975
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-user",
+          "section_title": "Current user",
+          "cosine_similarity": 0.27698054909706116
+        }
+      ]
+    },
+    {
+      "question": "Meridian escalation telephone?",
+      "scores_agree": true,
+      "full_ranking_agrees": true,
+      "maximum_score_difference": 4.470348358154297e-08,
+      "top_hits": [
+        {
+          "chunk_id": "linux-commands-001:v1:current-user",
+          "section_title": "Current user",
+          "cosine_similarity": 0.08461429178714752
+        },
+        {
+          "chunk_id": "linux-commands-001:v1:current-working-directory",
+          "section_title": "Current working directory",
+          "cosine_similarity": 0.07526002824306488
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Five chunks only; no speed or scaling claim.",
+    "Equal or nearly equal scores can produce different tie ordering.",
+    "Search agreement does not establish relevance.",
+    "Missing-answer queries still receive nearest neighbours."
+  ]
+}

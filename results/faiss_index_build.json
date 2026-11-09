@@ -1,0 +1,11 @@
+{
+  "index_directory": "indexes/linux_commands_faiss_v1",
+  "index_type": "IndexFlatIP",
+  "dimension": 384,
+  "vector_count": 5,
+  "roundtrip_rankings_identical": true,
+  "roundtrip_scores_identical": true,
+  "test_queries": "all five document vectors",
+  "index_file_bytes": 7725,
+  "document_embeddings_recomputed": false
+}

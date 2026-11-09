@@ -1,0 +1,23 @@
+{
+  "question": "How can I display the release of the Linux kernel?",
+  "index_directory": "indexes/linux_commands_faiss_v1",
+  "index_sha256": "d612b80b2e29a659741c94ac25d941de9e59b4014e6a7b2cced92a0db54eeeb9",
+  "embedding_model": {
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "document_embeddings_recomputed": false,
+  "hits": [
+    {
+      "chunk_id": "linux-commands-001:v1:kernel-release",
+      "section_title": "Kernel release",
+      "cosine_similarity": 0.7803855538368225
+    },
+    {
+      "chunk_id": "linux-commands-001:v1:host-name",
+      "section_title": "Host name",
+      "cosine_similarity": 0.2747538685798645
+    }
+  ],
+  "limitation": "Ranking only; no relevance gate or generation."
+}
